@@ -1,0 +1,60 @@
+body {
+  background: #0f172a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 420px;
+  margin: 80px auto;
+  background: #020617;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background: #22c55e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mode {
+  display: flex;
+  gap: 10px;
+}
+
+.mode button {
+  background: #334155;
+}
+
+.mode .active {
+  background: #22c55e;
+}
+
+.hidden {
+  display: none;
+}
+
+#status {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}

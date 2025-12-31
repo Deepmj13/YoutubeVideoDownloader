@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>YouTube Media Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>YouTube Media Downloader</h1>
+
+        <input type="text" id="urlInput" placeholder="Paste YouTube URL" />
+
+        <div class="mode">
+            <button id="videoBtn" class="active">Video</button>
+            <button id="audioBtn">Audio</button>
+        </div>
+
+        <!-- Video Section -->
+        <div id="videoSection">
+            <button id="fetchBtn">Fetch Qualities</button>
+
+            <select id="formatSelect">
+                <option value="">Select Video Quality</option>
+            </select>
+        </div>
+
+        <!-- Audio Section -->
+        <div id="audioSection" class="hidden">
+            <select id="audioSelect">
+                <option value="mp3">MP3</option>
+                <option value="m4a">M4A</option>
+                <option value="opus">OPUS</option>
+            </select>
+        </div>
+
+        <button id="downloadBtn">Download</button>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
