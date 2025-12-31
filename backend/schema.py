@@ -15,7 +15,6 @@ class DownloadRequest(BaseModel):
     url:str
     format_id:str
 
-
 class AudioRequest(BaseModel):
     url:str
     codec:str
